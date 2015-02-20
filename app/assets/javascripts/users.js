@@ -1,4 +1,5 @@
 // javascript explanation: document.ready is the jquery safeguard. then it grabs the metatag from the Head of the site. user fills out the form, they click the sign up button. Button gets disabled and send card info to Stripe. When stripe completes processing, and sends a response, then StripeResponse handler activates then complete processing in our server See Lecture 143, 10:43
+
 $(document).ready(function() {
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
   // Watch for a form submission:
